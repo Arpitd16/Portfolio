@@ -781,23 +781,46 @@ footer{
   .project-card {
     flex-direction: column;
     padding: 2rem 1rem;
+    width: 100%;
+    margin: 0;
+    height: auto;
   }
 
   .project-content {
     width: 100%;
     padding: 1rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+  }
+
+  .project-content-left, 
+  .project-content-right {
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 
   .project-number {
     font-size: 3em;
+    opacity: 0.5;
   }
 
   .project-heading {
     font-size: 1.5em;
+    width: 100%;
   }
 
   .project-sub-heading {
     font-size: 0.9em;
+    width: 100%;
+  }
+
+  .project-skills-container {
+    width: 100%;
+    justify-content: center;
   }
 
   .skills-container {
@@ -826,15 +849,42 @@ footer{
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+    padding: 1rem;
   }
 
   .link-wrapper {
-    flex-direction: column;
-    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .link-wrapper div {
+    margin: 0.5rem;
+  }
+
+  .link-wrapper div a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s;
+    font-size: 1.1rem;
   }
 
   .icon-wrapper {
+    display: flex;
+    gap: 1.5rem;
     justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .icon-wrapper a {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  #project2, #project4 {
+    margin-left: 0;
   }
 }
 
@@ -877,5 +927,25 @@ footer{
   .skills-logo {
     width: 2rem;
     height: 2rem;
+  }
+
+  .project-content {
+    padding: 0.5rem;
+  }
+
+  .link-wrapper {
+    gap: 1rem;
+  }
+
+  .link-wrapper div a {
+    font-size: 1rem;
+  }
+
+  .icon-wrapper {
+    gap: 1rem;
+  }
+
+  .icon-wrapper a {
+    font-size: 1.3rem;
   }
 }
